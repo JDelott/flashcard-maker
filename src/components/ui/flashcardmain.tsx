@@ -1,4 +1,4 @@
-import './App.css'
+
 import { Input } from "@/components/ui/input"
 import {
   Table,
@@ -10,16 +10,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-//   NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-//   NavigationMenuTrigger,
-//   NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
 
 
 
@@ -35,22 +25,11 @@ function flashCardMain() {
   return (
     <div>
         <div>
-        <h1 className="flex justify-center items-center text-lg font-semibold text-gray-600 m-4">FlashCard Ai</h1>
+        {/* <h1 className="flex justify-center items-center text-lg font-semibold text-gray-600 m-4"></h1> */}
         </div>
   
 
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <div>
-                  {/* <NavigationMenuTrigger></NavigationMenuTrigger> */}
-                </div>
-            <NavigationMenuContent>
-        <NavigationMenuLink>Link</NavigationMenuLink>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
-  </NavigationMenuList>
-</NavigationMenu>
+        
 
     <div className='h-screen w-screen'>
     <ResizablePanelGroup

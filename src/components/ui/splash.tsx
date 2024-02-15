@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/card"
 
 
+
+
+
 interface HeroSectionProps {
   title: string;
   subtitle?: string;
@@ -20,21 +23,19 @@ interface HeroSectionProps {
   
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({
+// eslint-disable-next-line no-empty-pattern
+const Splash: React.FC<HeroSectionProps> = ({
 
-//   subtitle,
-//   backgroundColor = 'bg-gray-400',
-//   textColor = 'text-white',
-//   py = 40,
-//   px = 8,
-  
+
 }) => {
   return (
     <div className="bg-gray-200 px-40 py-40">
       <div className=""></div>
       <div className="container mx-auto relative ">
         <h1 className="text-4xl md:text-6xl font-bold px-40 py-20"> Flashcard Ai</h1>
-        <div className='absolute flex justify-center right-1/3 transform -translate-x-1/2 mr-4 mb-40 px-40'>
+        <div>
+        </div>
+        <div className='absolute flex justify-center right-1/3 transform -translate-x-1/2 mr-4 px-40'>
             <h2> Create all your flashcards fast!</h2>
         </div>
       <div className='flex justify-end p-80'>
@@ -53,10 +54,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </Card>
          
         </div>
-      </div>
+      </div >
         </div>
     </div>
   );
 };
 
-export default HeroSection;
+export default Splash;
