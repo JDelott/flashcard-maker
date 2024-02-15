@@ -1,13 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '/Users/jacobdelott/projects/flashcard-maker/src/assets/flashcardvector.png'
+
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 flex justify-between items-center p-8">
-      <div>
+    <nav className="bg-gray-500 flex justify-between items-center p-8">
+      <div className="flex items-center">
+        {/* Logo */}
+        <img src={logo} alt="Logo" className="w-12 h-12 mr-2" /> 
         <NavLink to="/">
-          <h1 className="text-white text-center font-bold text-lg">Flash Card Ai</h1>
+          <h1 className="ml-auto text-white mr-2 font-bold text-3xl pt-2">Flashcard Ai</h1>
         </NavLink>
+      </div>
+      <div>
       </div>
     <div className="pr-2 justify-between items-center">
       <div className="flex">
