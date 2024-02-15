@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <img src={logo} alt="Logo" className="w-12 h-12 mr-2" /> 
         <NavLink to="/">
-          <h1 className="ml-auto text-white mr-2 font-bold text-3xl pt-2">Flashcard Ai</h1>
+          <h1 className="ml-auto text-white mr-2 font-bold text-3xl pt-2 hover:text-orange1">Flashcard Ai</h1>
         </NavLink>
       </div>
       <div>
@@ -20,8 +20,10 @@ const Navbar: React.FC = () => {
         {/* <NavLink to="/" className="text-white font-bold text-lg" activeClassName="text-yellow-500">
           Home
         </NavLink> */}
-        <NavLink to="/flashcardmaker" className="text-white font-bold text-lg ml-4" activeClassName="text-yellow-500">
-          Flashcard Maker
+        <NavLink to="/flashcardmaker" className="text-white font-bold text-lg ml-4 hover:text-orange-500">
+          <button className="bg-gray-800 text-white font-bold py-2 px-4 mx-4 rounded focus:outline-none hover:white hover:bg-gray-100 hover:text-orange1">
+          Generate
+          </button>
         </NavLink>
       </div>
     </div>

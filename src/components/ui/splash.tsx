@@ -35,14 +35,14 @@ const Splash: React.FC<HeroSectionProps> = ({
             <h2 className="text-4xl md:text-2xl font-bold py-4 ml-20"> Create all your flashcards fast!</h2>
             <div>
                 <form className="flex-col items-center px-20">
-                    <input type="text" placeholder="Name" className="border border-gray-400 rounded-md px-4 py-2 mb-4 w-full max-w-xs" />
+                    <input type="text" placeholder="Name" className="border border-gray-400 rounded-md px-4 py-2 mb-4 w-full max-w-xs focus:outline-none focus:border-gray-500" />
                     <div className="">
-                        <input type="email" placeholder="Email" className="border border-gray-400 rounded-md px-4 py-2 mb-4 w-full max-w-xs " />
+                        <input type="email" placeholder="Email" className="border border-gray-400 rounded-md px-4 py-2 mb-4 w-full max-w-xs focus:outline-none focus:border-gray-500" />
                     </div>
-                    <button type="submit" className="bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                    <button type="submit" className="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:text-black hover:bg-gray-100">
                         Login
                     </button>
-                    <button type="submit" className="bg-gray-800 text-white font-bold py-2 px-4 mx-4 rounded">
+                    <button type="submit" className="bg-gray-800 text-white font-bold py-2 px-4 mx-4 rounded hover:text-black hover:bg-gray-100">
                         Signup
                     </button>
                 </form>
