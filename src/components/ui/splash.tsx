@@ -30,7 +30,7 @@ const Splash: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <div className="bg-gray-200 px-40 py-40">
-      <div className=""></div>
+   
       <div className="container mx-auto relative ">
         <h1 className="text-4xl md:text-6xl font-bold px-40 py-20"> Flashcard Ai</h1>
         <div>

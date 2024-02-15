@@ -3,16 +3,23 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <NavLink to="/" className="text-white font-bold text-lg" activeClassName="text-yellow-500">
-          Home
+    <nav className="bg-gray-800 flex justify-between items-center p-8">
+      <div>
+        <NavLink to="/">
+          <h1 className="text-white text-center font-bold text-lg">Flash Card Ai</h1>
         </NavLink>
-        <NavLink to="/flashcardmaker" className="text-white font-bold text-lg" activeClassName="text-yellow-500">
+      </div>
+    <div className="pr-2 justify-between items-center">
+      <div className="flex">
+        {/* <NavLink to="/" className="text-white font-bold text-lg" activeClassName="text-yellow-500">
+          Home
+        </NavLink> */}
+        <NavLink to="/flashcardmaker" className="text-white font-bold text-lg ml-4" activeClassName="text-yellow-500">
           Flashcard Maker
         </NavLink>
       </div>
-    </nav>
+    </div>
+  </nav>
   );
 };
 
